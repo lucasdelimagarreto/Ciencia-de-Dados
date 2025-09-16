@@ -7,7 +7,7 @@ import statistics as sts
 loja = pd.read_csv("dados_loja.csv")
 
 print("\n--- Pré-visualização dos dados ---")
-print(loja.head())
+print(loja.to_string())
 
 # -------------------------------
 # Selecionar apenas atributos quantitativos
