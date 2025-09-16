@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as srn
 
 # -------------------------------
-# Criar DataFrame com os dados do Hospital
+# DataFrame com os dados do Hospital
 # -------------------------------
 dados = {
     "Id": [4201, 3217, 4039, 1920, 4340, 2301, 1322, 3027],
@@ -37,7 +37,9 @@ for coluna in ["Idade", "Peso", "Temperatura", "NumInternacoes"]:
     print(f"Q1: {hospital[coluna].quantile(0.25)}")
     print(f"Q3: {hospital[coluna].quantile(0.75)}\n")
 
+# -------------------------------
 # Frequências de dados qualitativos
+# -------------------------------
 print("\n--- Frequências de Variáveis Qualitativas ---\n")
 print("Sexo:\n", hospital["Sexo"].value_counts(), "\n")
 print("Manchas:\n", hospital["Manchas"].value_counts(), "\n")
@@ -57,17 +59,23 @@ print(hospital[["Idade", "Peso", "Temperatura", "NumInternacoes"]].corr(), "\n")
 # Visualizações
 # -------------------------------
 
+# -------------------------------
 # Histograma
+# -------------------------------
 hospital[["Idade", "Peso", "Temperatura", "NumInternacoes"]].hist(figsize=(10, 8))
 plt.suptitle("Histogramas das Variáveis Quantitativas")
 plt.show()
 
+# -------------------------------
 # Boxplot
+# -------------------------------
 srn.boxplot(data=hospital[["Idade", "Peso", "Temperatura", "NumInternacoes"]])
 plt.title("Boxplot das Variáveis Quantitativas")
 plt.show()
 
+# -------------------------------
 # Diagrama de dispersão (scatterplot matrix)
+# -------------------------------
 srn.pairplot(hospital[["Idade", "Peso", "Temperatura", "NumInternacoes"]])
 plt.suptitle("Matriz de Dispersão", y=1.02)
 plt.show()
