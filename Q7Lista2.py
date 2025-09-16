@@ -12,13 +12,11 @@ dados = {
     "Idade": [28, 18, 49, 18, 21, 22, 19, 34],
     "Sexo": ["M", "F", "M", "M", "F", "F", "F", "M"],
     "Peso": [79, 67, 92, 43, 52, 72, 87, 67],
-    "Manchas": ["Concentradas", "Inexistente", "Espalhadas", "Inexistente",
-                "Uniformes", "Inexistentes", "Espalhadas", "Uniformes"],
+    "Manchas": ["Concentradas", "Inexistente", "Espalhadas", "Inexistente", "Uniformes", "Inexistentes", "Espalhadas", "Uniformes"],
     "Temperatura": [38.0, 39.5, 38.0, 38.5, 37.0, 38.0, 39.0, 38.4],
     "NumInternacoes": [2, 4, 2, 8, 1, 3, 6, 2],
     "Estado": ["SP", "MG", "RS", "MG", "PE", "RJ", "AM", "GO"],
-    "Diagnóstico": ["Doente", "Doente", "Saudável", "Doente",
-                    "Saudável", "Doente", "Doente", "Saudável"]
+    "Diagnóstico": ["Doente", "Doente", "Saudável", "Doente", "Saudável", "Doente", "Doente", "Saudável"]
 }
 
 hospital = pd.DataFrame(dados)
